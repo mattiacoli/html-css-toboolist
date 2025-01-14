@@ -1,0 +1,18 @@
+:root{
+  --todo-lighter:#ffffff; 
+  --todo-light:#f6f8f9;
+  --todo-light-darker:#c7cdd1; 
+  --todo-dark:#000000; 
+  --todo-primary:#47adf1;
+  --todo-secondary:#64c0a9;
+  --todo-secondary-light:#b0c926;
+  --todo-third:#9c72e4;
+  --todo-third-light:#d963a1;
+  --todo-variation:#f29e33;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
