@@ -1,48 +1,53 @@
-
 /* common */
-:root{
-  --todo-lighter:#ffffff; 
-  --todo-light:#f6f8f9;
-  --todo-light-darker:#c7cdd1; 
-  --todo-dark:#000000; 
-  --todo-primary:#47adf1;
-  --todo-secondary:#64c0a9;
-  --todo-secondary-light:#b0c926;
-  --todo-third:#9c72e4;
-  --todo-third-light:#d963a1;
-  --todo-variation:#f29e33;
+:root {
+  --todo-lighter: #ffffff;
+  --todo-light: #f6f8f9;
+  --todo-light-darker: #c7cdd1;
+  --todo-dark: #000000;
+  --todo-primary: #47adf1;
+  --todo-secondary: #64c0a9;
+  --todo-secondary-light: #b0c926;
+  --todo-third: #9c72e4;
+  --todo-third-light: #d963a1;
+  --todo-variation: #f29e33;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: var(--todo-light);
+}
+
+.debug * {
+  border: 1px dashed;
 }
 
 /* header */
 
-.site-header{
-  height: 80px;
+.site-header {
   background-color: #fbfbfb;
   padding: 1rem;
-  line-height:80px; 
-  text-align:left;
-
 }
 
-h1{
+.logo {
+ 
+  vertical-align: middle;
+}
+
+h1 {
   display: inline;
   font-family: "Roboto", serif;
   font-weight: 900;
+  vertical-align: middle;
 }
 
 /* taskbar */
-.taskbar{
-  background-color:var(--todo-lighter);
+.taskbar {
+  background-color: var(--todo-lighter);
   margin: 5px 168px;
   margin-bottom: 3px;
   height: 3rem;
@@ -51,16 +56,17 @@ h1{
 
 }
 
-.button-taskbar{
+.button-taskbar {
   display: inline-block;
-  padding:0.25rem;
+  padding: 0.25rem;
   margin: 1rem 0.25rem;
   height: 1.5rem;
   border-radius: 5px;
   border: 1px solid black;
+  vertical-align: middle;
 }
 
-#add-task{
+#add-task {
   background-color: var(--todo-primary);
   border-color: var(--todo-primary);
   color: var(--todo-lighter);
@@ -68,7 +74,7 @@ h1{
   font-size: 10px;
 }
 
-#add-section{
+#add-section {
   border-color: var(--todo-light-darker);
   color: var(--todo-light-darker);
   font-family: "Roboto", serif;
@@ -76,29 +82,30 @@ h1{
 }
 
 /* to do list */
-.todo-list{
-  margin: 2px 168px ;
+.todo-list {
+  margin: 2px 168px;
   background-color: var(--todo-lighter);
-  
+
 }
-ul{
+
+ul {
   list-style: none;
   background-color: var(--todo-lighter);
   padding: 1.5rem;
   font-family: "Roboto", serif;
 }
 
-li{
+li {
   padding-bottom: 1.5rem;
 }
 
-p{
+p {
   padding: 0.5rem;
   font-family: "Roboto", serif;
   font-size: 12px;
 }
 
-.circle-checked{
+.circle-checked {
 
   border: 1px solid rgb(9, 198, 9);
   color: rgb(9, 198, 9);
@@ -106,7 +113,7 @@ p{
   align-items: center;
 }
 
-.circle-cross{
+.circle-cross {
   border: 1px solid rgb(255, 0, 0);
   color: rgb(255, 0, 0);
   border-radius: 100%;
@@ -114,7 +121,7 @@ p{
 }
 
 /* tag */
-.tag{
+.tag {
   padding: 4px;
   border: 1px solid black;
   border-radius: 80px;
@@ -122,32 +129,32 @@ p{
   color: white;
 }
 
-#editorial{
+#editorial {
   background-color: var(--todo-primary);
   border-color: var(--todo-primary);
 }
 
-#q1-goals{
+#q1-goals {
   background-color: var(--todo-third);
   border-color: var(--todo-third);
 }
 
-#recruting{
+#recruting {
   background-color: var(--todo-secondary);
   border-color: var(--todo-secondary);
 }
 
-#mobile{
+#mobile {
   background-color: var(--todo-variation);
   border-color: var(--todo-variation);
 }
 
-#website{
+#website {
   background-color: var(--todo-third-light);
   border-color: var(--todo-third-light);
 }
 
-#sales{
+#sales {
   background-color: var(--todo-secondary-light);
   border-color: var(--todo-secondary-light);
 }
